@@ -20,4 +20,18 @@ for i in range (len(grades)):
 
   # увеличте оценки более 50 на 10%
 
-print(grades)
+prices = np.array([50, 30, 70, 40, 90], float)
+
+for i in range(len(prices)):
+    if prices[i]>40:
+        prices[i] *= 0.9
+
+
+matrix_a = np.array([[1, 2, 3], 
+                     [4, 5, 6], 
+                     [7, 8, 9]])
+
+
+matrix_a = np.array([[10, 10, 10], 
+                     [20, 20, 20], 
+                     [30, 30, 30]])

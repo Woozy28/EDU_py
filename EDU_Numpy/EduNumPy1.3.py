@@ -16,11 +16,5 @@ tiled_array1 = np.tile(original_array,(3,1)) # массив с повторен�
 tiled_array2 = np.tile(original_array,(4,2)) # повторение массива с дополнительным критерием
 tiled_array = np.tile(original_array,(2,4,2)) # повторение массива + сделайте этот массив двумерным
 
-x=2
-y=2
-z=3
-
-
 def print_matrix (z,x,y):
     return np.zeros((z,x,y))
-print(print_matrix(x,y,z))

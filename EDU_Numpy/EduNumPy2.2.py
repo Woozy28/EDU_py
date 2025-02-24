@@ -1,5 +1,6 @@
 import numpy as np
 
+
 array1 = np.array([10, 15, 8, 20])
 array2 = np.array([3, 4, 2, 7])
 
@@ -53,5 +54,5 @@ arr = np.array([5, 10, 15, 20, 25])
 
 result =  arr % 2 ==0# булев массив, который показывает является ли каждый элемент массива четным
 
-print(result)
+
 

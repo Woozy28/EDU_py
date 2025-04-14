@@ -24,3 +24,9 @@ print(sales["price"].min())
 
 print("maximum: ")
 print(sales["price"].max())
+
+print("variance: ")
+print(sales["price"].var()) #дисперсия
+
+print("standard deviation: ")
+print(sales["price"].std()) # стандартное отклонение

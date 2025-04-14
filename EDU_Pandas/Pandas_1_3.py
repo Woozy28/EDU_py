@@ -20,6 +20,8 @@ sales = sales.astype({
 
 print(sales.dtypes)
 
-print(sales["product_group"].nunique())
+print(sales["product_group"].nunique()) # Возвращает количество различных значений 
 
-print(sales["product_group"].unique())
+print(sales["product_group"].unique()) # возвращает различные значения
+
+print(sales["product_group"].value_counts()) # Возвращает сумму строк различных значений

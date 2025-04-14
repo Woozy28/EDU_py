@@ -8,9 +8,7 @@ df = pd.DataFrame({
 })
 
 
-df.shape #Show size
-
-#C:\Users\Woozy4\Desktop
+#df.shape Show size
 
 
 sales = pd.read_csv("sales.csv", usecols=["product_code","product_group","stock_qty"])

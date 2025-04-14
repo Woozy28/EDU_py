@@ -19,8 +19,8 @@ print(solution(data))
 
 #Используя метод loc, выберите первые 5 строк и столбцы с названиями product_code и product_group.
 
-def solution(df:data):
+def solution(df):
     
-    result =1 #пишите код здесь
+    result = df.loc[:6,["product_code","product_group"]]
 
     return result

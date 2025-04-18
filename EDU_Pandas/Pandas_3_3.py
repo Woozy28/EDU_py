@@ -35,8 +35,6 @@ def solution(df):
     df[["first_name" , "last_name"]] = df['name'].str.split(' ', expand=True)
     df['combined'] = df["last_name"].str.upper() + ' - ' + df['year_hired']
 
-    print(df)
-    #result = #пишите код здесь
-    #return result
+    return df[["first_name" , "last_name", 'year_hired', 'combined']]
 
 solution(data)

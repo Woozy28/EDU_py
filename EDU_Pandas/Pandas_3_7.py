@@ -12,11 +12,11 @@ data = pd.DataFrame({
 
 def solution(df):
     
-    for col in df.select_dtypes(include ='number'):
+    for col in df.select_dtypes(include ='number'): #отбираем только колонки с цифрами
         df[col] = df[col].fillna(value = df[col].mean())
     
-    for col in df.select_dtypes(exclude= 'number'):
-        most_frequent = df[col].value_counts().index[0]
+    for col in df.select_dtypes(exclude= 'number'): #отбираем только колонки без цифр
+        most_frequent = df[col].value_counts().index[0] # находим самую популярную строку
         df[col] = df[col].fillna(value = most_frequent)
     return df
 
